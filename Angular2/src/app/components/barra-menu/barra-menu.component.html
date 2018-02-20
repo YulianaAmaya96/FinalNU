@@ -1,0 +1,14 @@
+<div class="barra-menu animated fadeInDown fast">
+  <nav class="navbar">
+   <div class="container-fluid">
+     <div class="navbar-header">
+       <a class="navbar-brand text-shadow" href="#"><i class="material-icons">shopping_cart</i><p>Tienda virtual de next u</p></a>
+     </div>
+     <ul class="nav navbar-nav pull-right">
+       <li><a [routerLink]="['./tienda']" class="text-shadow active" [ngClass]="{active : (this.url == 'tienda') }"> <i class="material-icons">apps</i></a></li>
+       <li><a [routerLink]="['./carro']" class="text-shadow active" [ngClass]="{active : (this.url == 'carro') }"><i class="material-icons">shopping_cart</i><span *ngIf="this.carroService.contadorCarro() > 0" class="item-counter">{{this.carroService.contadorCarro()}}</span></a></li>
+       <li class="cursor "><a (click)="cerrarSesion()" class="text-shadow"><i class="material-icons">assignment_return</i></a></li>
+     </ul>
+   </div>
+  </nav>
+</div>

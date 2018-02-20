@@ -1,0 +1,113 @@
+body, h1{
+    margin: 0px;
+}
+.cat-prod, .det-prod, .ped-prod{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.img-fondo{
+    background-image: url('./img/main-fondo.jpg');
+    height: 100%;
+}
+.info{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.ocultar{
+    display: none !important;
+}
+.mostrar_b{
+    display: block;
+}
+.info > *{
+    width: 47%;
+    margin: 10px;
+}
+.controls *{
+    margin-right: 5px;
+}
+.login-form label, .login-form h1{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.login-form button{
+    margin-top: 12px;
+    margin-left: 38%;
+}
+.cat-prod .get-form *{
+    display: block;
+    margin-right: 15px;
+}
+.login-form h1{
+    text-align: center;
+}
+.login-form{
+    width: 25%;
+    margin: 0 auto;
+}
+.login-form input{
+    width: 100%;
+    border-radius: 5px;
+}
+.cat-prod .panel-heading {
+    height: 78px;
+}
+.cat-prod .panel-body{
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.pnl-prod input{
+    width: 45px;
+    height: 33px;
+}
+.pnl-prod .panel-body div{
+    width: 100%;
+}
+.det-prod img{
+    width: 100%;
+    border: 1px solid #dadaf3;
+    border-radius: 3px;
+    padding: 2px;
+}
+.cat-prod .prodi{
+    width: 31%;
+    margin: 10px;
+}
+.nav-bar{
+    background: #e89381;
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -1px;
+}
+.pnl-prod .img-prod{
+    height: 156px;
+}
+.det-prod ul{
+    list-style: none;
+}
+.det-prod a{
+    margin-left: 9px;
+}
+.caja-form > *{
+    display: block;
+}
+.login-form span{
+    color: red;
+    text-shadow: 1.2px 1.5px black;
+}
+.login-panel{
+    background-image: url('./img/login-fondo.jpg');
+    background-repeat: no-repeat;
+    height: 630px;
+    padding-top: 10%;
+}
+.ped-prod .img-ped{
+    width: 80px;
+}

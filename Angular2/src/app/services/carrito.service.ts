@@ -40,7 +40,7 @@ export class carroService {
       }
       return false;
     }
-    return false; //Devolver falso si el producto no existia en el carro
+    return false; 
   }
 
   subtotal(precio, cantidad){

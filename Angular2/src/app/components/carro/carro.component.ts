@@ -45,7 +45,7 @@ import { producto-carro } from '../../models/producto-carro';
       return total;
     }
   pagarcarro(){
-    this.http.get('https://tienda-d3454.firebaseio.com/productos/.json')
+    this.http.get('https://tiendavirtual-ca85d.firebaseio.com/productos/.json')
     .map((response : Response) => {
         this.catalogo =  response.json()
       }
@@ -69,7 +69,7 @@ import { producto-carro } from '../../models/producto-carro';
     )
   }
   actualizarDisponible(id:number, itemCatalogo:Producto){
-    return this.http.put(`https://tienda-d3454.firebaseio.com/productos/${id}.json`, itemCatalogo)
+    return this.http.put(`https://tiendavirtual-ca85d.firebaseio.com/productos/${id}.json`, itemCatalogo)
     .map((response : Response) => {
         return this.catalogo =  response.json()
       }

@@ -13,7 +13,7 @@ export class TiendaService {
   constructor(private http : Http, private router : Router) { }
 
   public getProductos(){
-  return this.http.get('https://tienda-d3454.firebaseio.com/productos/.json').map(
+  return this.http.get('https://tiendavirtual-ca85d.firebaseio.com/productos/.json').map(
     (response : Response) => {
       this.catalogo =  response.json();
       this.productosCatalogo = this.catalogo

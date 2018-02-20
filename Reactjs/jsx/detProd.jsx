@@ -44,7 +44,7 @@ class detProd extends React.Component {
     }
     getProducto(){
         request
-            .get('https://tienda-d3454.firebaseio.com/productos')
+            .get('https://tienda-d3454.firebaseio.com/productos/.json')
             .set('Content-Type', 'application/json')
             .end((err, res) => {
                 console.log(res.body);

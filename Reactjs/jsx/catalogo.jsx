@@ -64,13 +64,13 @@ class catalogo extends React.Component {
     }
     getProds(){
         request
-            .get('https://tienda-d3454.firebaseio.com/productos')
+            .get('https://tienda-d3454.firebaseio.com/productos/.json')
             .set('Content-Type', 'application/json')
             .end((err, res) => {
                 console.log(res.body);
                 let productosRecuperados = res.body;
                 request
-                    .get('https://tienda-d3454.firebaseio.com/pedidos')
+                    .get('https://tienda-d3454.firebaseio.com/pedidos/.json')
                     .set('Content-Type', 'application/json')
                     .end((errPedido, resPedido) => {
                         console.log(resPedido.body);

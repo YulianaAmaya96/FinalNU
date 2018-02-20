@@ -69,7 +69,7 @@ class iniSesion extends React.Component {
             let correo = inputCorreo.value;
             let pass = inputContrasena.value;
             request
-            .get('https://tienda-d3454.firebaseio.com/usuarios')
+            .get('https://tienda-d3454.firebaseio.com/usuarios/.json')
             .set('Content-Type', 'application/json')
             .end((err, res)=>{
                 console.log(res.body);

@@ -83,7 +83,7 @@ class pedido extends React.Component {
         for (var index = 0; index < util.productospedidos.length; index++) {
             var element = util.productospedidos[index];
             request
-            .post('https://tienda-d3454.firebaseio.com/pedidos')
+            .post('https://tienda-d3454.firebaseio.com/pedidos/.json')
             .set('Content-Type', 'application/json')
             .send(JSON.stringify(element))
             .end((err, res)=>{
